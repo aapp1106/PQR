@@ -14,6 +14,7 @@ namespace PQR_V1.Model
 		public string Id { get; set; }
 		public string RadicadoId { get; set; }
 		public string Mensaje { get; set; }
+		public string Respuesta { get; set; }
 		public DateTime Fecha { get; set; } = DateTime.Now;
 	}
 }

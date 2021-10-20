@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using PQR_V1.Model;
 using PQR_V1.Services;
 using System;
@@ -8,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace PQR_V1.Controllers
 {
+	[AllowAnonymous]
+	[EnableCors("AllowOrigin")]
+
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ReclamoController : Controller
